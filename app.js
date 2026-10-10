@@ -79,14 +79,14 @@
     document.querySelector('.languages').setAttribute('aria-label', language === 'ar' ? 'اللغة' : 'Langue');
     menu.setAttribute('aria-label',language === 'ar' ? 'القائمة الرئيسية' : 'Navigation principale');
     document.querySelector('.goal-tabs').setAttribute('aria-label',language === 'ar' ? 'اختر هدفك' : 'Choisir votre objectif');
-    document.querySelector('.header .brand').setAttribute('aria-label',language === 'ar' ? 'KARICHE، الرئيسية' : 'KARICHE, accueil');
+    document.querySelector('.header .brand').setAttribute('aria-label',language === 'ar' ? 'كريمو كوتشينغ، الرئيسية' : 'Krimou Coaching, accueil');
     document.querySelectorAll('.close-dialog').forEach(button => button.setAttribute('aria-label',language === 'ar' ? 'إغلاق' : 'Fermer'));
     document.querySelectorAll('.portrait img,.coach-photo img').forEach(img => img.alt = language === 'ar' ? 'عبد الكريم كريش، مدرب رياضي، في القاعة الرياضية' : 'Abdelkrim Kariche, coach sportif, dans une salle de sport');
     form.elements.name.placeholder = language === 'ar' ? 'اسمك الكامل' : 'Votre nom';
     form.elements.email.placeholder = language === 'ar' ? 'you@example.com' : 'vous@exemple.com';
     form.elements.message.placeholder = language === 'ar' ? 'الوقت المتاح لك وتوقعاتك…' : 'Vos disponibilités, vos attentes…';
     document.getElementById('request-preview').setAttribute('aria-label',language === 'ar' ? 'الرسالة المجهّزة' : 'Message préparé');
-    document.title = language === 'ar' ? 'KARICHE — تدريب رياضي مع عبد الكريم كريش' : 'KARICHE — Coaching sportif avec Abdelkrim';
+    document.title = language === 'ar' ? 'كريمو كوتشينغ — تدريب رياضي مع عبد الكريم' : 'Krimou Coaching — Coaching sportif avec Abdelkrim';
     document.querySelector('meta[name=description]').content = language === 'ar' ? 'تدريب مع عبد الكريم كريش. كمال الأجسام، اللياقة البدنية والمرافقة في الجزائر. اكتشف شهاداته وجهّز طلبك.' : 'Votre coaching avec Abdelkrim Kariche. Musculation, fitness et accompagnement personnalisé en Algérie. Découvrez ses formations et préparez votre demande.';
     setGoal(currentGoal, false);
     updateMobilePlan();
